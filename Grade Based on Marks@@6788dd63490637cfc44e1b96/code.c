@@ -1,16 +1,16 @@
 #include <stdio.h>
 int main(){
-    int a;
-    scanf("%d",&a);
-    if(a>=90){
+    char ch;
+    scanf("%d",&ch);
+    if(ch>=90){
         printf("A");
-    }else if(a>=80 && a <= 90){
+    }else if(ch>=80 &&  ch <= 90){
         printf("B");
-    }else if(a>=70 || a<=80){
+    }else if(ch>=70 && ch<=80){
         printf("C");
-    }else if(a>=60 || a<=70){
+    }else if(ch>=60 || ch<=70){
         printf("D");
-    }else(a<=60){
+    }else(ch<=60){
         printf("F");
     }
     return 0;
