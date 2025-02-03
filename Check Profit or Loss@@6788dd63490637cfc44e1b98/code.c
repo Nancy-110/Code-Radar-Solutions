@@ -1,7 +1,8 @@
 #include <stdio.h>
 int main(){
     int costprice ,sellingprice;
-    scanf(" %d %d", &costprice, &sellingprice);
+    scanf(" %d",&costprice);
+    scanf(" %d",&sellingprice);
     if(costprice > sellingprice){
         printf("Profit");
     }else if(costprice < sellingprice){
