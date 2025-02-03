@@ -2,7 +2,7 @@
 int main(){
     char ch;
     scanf(" %c", &ch);
-    if(ch>=90){
+    if(ch>=90 && ch<=100){
         printf("A");
     }else if(ch>=80 &&  ch <= 90){
         printf("B");
