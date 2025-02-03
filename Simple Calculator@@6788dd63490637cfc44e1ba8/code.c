@@ -5,7 +5,7 @@ int main(){
     scanf("%d %d", &a,&b);
     scanf("%c",&operator);
     if(operator=='+'){
-       printf("%d",ab);
+       printf("%d",a+b);
     }else if(operator == '-'){
         printf("%d",a-b);
     }else if(operator=='*'){
