@@ -1,8 +1,10 @@
 #include <stdio.h>
 int main(){
-    int a;
-    char day;
-    scanf("%d",&a);
+    int day;
+    if(scanf("%d",&day) !=1){
+        printf("Inavlid");
+        return 0;
+    }
     switch(day){
     case 1:
         printf("Monday");
@@ -27,6 +29,7 @@ int main(){
         break;
     default:
     printf("Invalid");
+    break;
    
     }  
     return 0;
