@@ -1,11 +1,10 @@
 #include <stdio.h>
 int main(){
-    float a, b, c;
-    scanf(" %f %f %f", &a,&b,&c);
+    int  a, b, c;
+    scanf(" %d %d %d", &a, &b, &c);
     if(a==b || b == c ||c == a){
         printf("Isosceles");
-    }
-    else if(a!=b && b!=c && c!=a){
+    }else if(a!=b && b!=c && c!=a){
         printf("Scalene");
     }else(a==b && b==c && c==a){
         printf("Equilateral");
