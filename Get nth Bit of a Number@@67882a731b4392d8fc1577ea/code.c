@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
     int n,a;
-    scanf("%d %d",&a,&b);
-    int nbit=(num>>n)&1;
-    printf("%d",nbit);
+    scanf("%d %d",&n,&a);
+    int nbit=(n>>a)&1;
+    printf("%d",n,a,nbit);
     return 0;
 }
