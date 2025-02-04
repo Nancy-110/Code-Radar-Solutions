@@ -9,5 +9,6 @@ int main(){
     int num;
     scanf("%d",&num);
     dtob(num);
-    printf("\n")
+    printf("\n");
+    return 0;
 }
