@@ -1,17 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int num, i, isPrime = 1;
-
-    // User se number input karna
-    printf("Ek number daaliye: ");
+    int num, i, isPrime = 1; 
     scanf("%d", &num);
-
-    // Check karna agar number 1 ya usse chhota hai
     if (num <= 1) {
         isPrime = 0;
     } else {
-        // Loop use karke number ko check karna
         for (i = 2; i <= num / 2; i++) {
             if (num % i == 0) {
                 isPrime = 0;
@@ -19,12 +13,10 @@ int main() {
             }
         }
     }
-
-    // Result print karna
     if (isPrime) {
-        printf("%d ek prime number hai.\n", num);
+        printf("Prime");
     } else {
-        printf("%d ek prime number nahi hai.\n", num);
+        printf("Not Prime");
     }
 
     return 0;
