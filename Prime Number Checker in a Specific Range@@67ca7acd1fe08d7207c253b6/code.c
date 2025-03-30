@@ -31,7 +31,7 @@ int main() {
     scanf("%d", &a);
     scanf("%d", &b);
 
-   printf(%d to %d:\n", a, b);
+   printf("%d to %d:\n", a, b);
     printPrimesInRange(a, b);
 
     return 0;
