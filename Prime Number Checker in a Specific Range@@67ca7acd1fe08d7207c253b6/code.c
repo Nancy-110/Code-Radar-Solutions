@@ -25,14 +25,6 @@ void printPrimesInRange(int a, int b) {
         printf("No prime numbers");
     }
 }
-
-int main() {
-    int a, b;
-    scanf("%d", &a);
-    scanf("%d", &b);
-
    printf("%d to %d:\n", a, b);
     printPrimesInRange(a, b);
 
-    return 0;
-}
