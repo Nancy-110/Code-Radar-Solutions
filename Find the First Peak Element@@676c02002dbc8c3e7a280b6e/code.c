@@ -32,7 +32,7 @@ int main() {
     int n;
 
     // User se array size input lena
-    printf("Enter the size of the array: ");
+
     scanf("%d", &n);
 
     if (n <= 0) {
