@@ -21,4 +21,4 @@ int main(){
    printf("%d ",max);
    printf("%d",min);
     return 0;
-}Loading Code...
+}
