@@ -10,7 +10,7 @@ int main(){
     int firstPeak = findFirstPeak(arr, n);
     
     if (firstPeak != -1) {
-        printf(" %d\n",peakIndex);
+        printf(" %d\n",firstPeak);
     } else {
         printf("No peak element found in the array.\n");
     }
