@@ -5,7 +5,6 @@ void rotateArray(int arr[], int n, int k) {
     k = k % n;
 
     // Print rotated array
-    printf("Rotated Array: ");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[(i + (n - k)) % n]);
     }
