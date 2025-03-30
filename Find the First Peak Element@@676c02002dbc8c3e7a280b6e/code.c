@@ -7,7 +7,7 @@ int main(){
     for(int i = 0; i<n;i++){
         scanf("%d",&arr[i]);
     }
-    int firstPeak = findFirstPeak(arr, n);
+    int FirstPeak = firstPeak(arr, n);
     
     if (firstPeak != -1) {
         printf(" %d\n",firstPeak);
