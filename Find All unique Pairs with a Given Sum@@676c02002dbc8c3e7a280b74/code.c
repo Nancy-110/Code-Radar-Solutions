@@ -13,10 +13,11 @@ int main(){
 
     return 0;
 }
-void Sum(int arr[],int n,int T){
-    for(int i =0; i < n; i++){
-        for(int j = i+1; j < n; j++){
-            if(arr[i]+arr[j] == T){
+void Sum(int arr[], int n, int T) {
+    for (int i = 0; i < n; i++) {
+        for (int j = i + 1; j < n; j++) { // Start j from i + 1
+            if (arr[i] + arr[j] == T) { // Check if the sum matches
+                // Ensure this pair has not been printed already
                 int alreadyPrinted = 0;
                 for (int k = 0; k < i; k++) {
                     if ((arr[k] == arr[i] && arr[k + 1] == arr[j]) ||
@@ -31,6 +32,4 @@ void Sum(int arr[],int n,int T){
             }
         }
     }
-                printf("%d %d\n",arr[i],arr[j]);
-            }
-    
+}
