@@ -8,7 +8,7 @@ int findFirstPeak(int arr[], int n) {
     }
     int allSame = 1;
     for(int i=1;i<n;i++){
-        if(arr[] !=arr[0]){
+        if(arr[i] !=arr[0]){
             allSame =0;
             break;
         }
