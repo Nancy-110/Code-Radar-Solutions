@@ -1,14 +1,4 @@
 #include <stdio.h>
-#include <stdbool.h>
-
-bool isUniquePair(int x, int y, int printed[][2], int count) {
-    for (int i = 0; i < count; i++) {
-        if ((printed[i][0] == x && printed[i][1] == y) || (printed[i][0] == y && printed[i][1] == x)) {
-            return false;
-        }
-    }
-    return true;
-}
 
 void Sum(int arr[], int n, int T) {
     for (int i = 0; i < n; i++) {
