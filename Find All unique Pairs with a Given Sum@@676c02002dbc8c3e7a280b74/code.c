@@ -2,9 +2,12 @@
 
 void Sum(int arr[], int n, int T) {
     for (int i = 0; i < n; i++) {
-        for (int j = i + 1; j < n; j++) { // Start j from i + 1 to avoid repetition
-            if (arr[i] + arr[j] == T) { // Compare the sum of values, not indices
-                printf("%d %d\n", arr[i], arr[j]); // Print the pair
+        for (int j = i + 1; j < n; j++) { 
+            if (arr[i] + arr[j] == T) {
+                printf("%d %d\n", arr[i], arr[j]); 
+            }
+            if(arr[i]==arr[i+1]){
+                printf("%d %d",arr[i],arr[i+1]);
             }
         }
     }
