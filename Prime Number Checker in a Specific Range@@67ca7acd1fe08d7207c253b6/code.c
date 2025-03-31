@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <bool.h>
+#include <boolean.h>
 
 // Function to print prime numbers in a range
 void printPrimesInRange(int a, int b) {
