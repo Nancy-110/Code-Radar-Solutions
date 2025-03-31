@@ -23,7 +23,11 @@ int main(){
     }
     if(n<2){
         printf("-1\n");
-    }else{
+
+    }else if(smax==arr[0])[
+        printf("-1\n");
+    ]
+    else{
     printf("%d",smax);
     }
     return 0;
