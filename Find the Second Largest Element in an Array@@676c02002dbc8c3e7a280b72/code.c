@@ -24,8 +24,6 @@ int main(){
     if(n==1){
         printf("-1\n");
 
-    }else if(smax==arr[0]){
-        printf("-1\n");
     }
     else{
     printf("%d",smax);
