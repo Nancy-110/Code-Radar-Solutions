@@ -7,7 +7,7 @@ void Sum(int arr[], int n, int T) {
                 printf("%d %d\n", arr[i], arr[j]); 
             }
             if(arr[i]==arr[i+1]){
-                printf("%d %d",arr[i],arr[i+1]);
+                printf("%d %d\n",arr[i],arr[i+1]);
             }
         }
     }
