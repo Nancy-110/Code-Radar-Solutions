@@ -3,9 +3,9 @@
 
 // Function to check if a number is prime  
 bool isPrime(int n) {
-    if (n <= 1)
+    if (n <= 1){
         return false;
-    
+    }
     return true;
 }
 
