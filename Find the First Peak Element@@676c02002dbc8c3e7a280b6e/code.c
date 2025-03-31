@@ -1,28 +1,26 @@
 #include <stdio.h>
-// Function to find the first peak element
 int findFirstPeak(int arr[], int n) {
-    // Agar array mein ek hi element hai
     if (n == 1) {
         return 0;
     }
-    // Pehla element ko check karo (sirf right neighbor ko compare karo)
-    if (arr[0] >= arr[1]) {
+
+    // First element must be strictly greater than the next
+    if (arr[0] > arr[1]) {
         return 0;
     }
 
-    // Beech wale elements check karo
+    // Middle elements must be strictly greater than both neighbors
     for (int i = 1; i < n - 1; i++) {
-        if (arr[i] >= arr[i - 1] && arr[i] >= arr[i + 1]) {
+        if (arr[i] > arr[i - 1] && arr[i] > arr[i + 1]) {
             return i;
         }
     }
 
-    // Aakhri element ko check karo (sirf left neighbor ko compare karo)
-    if (arr[n - 1] >= arr[n - 2]) {
+    // Last element must be strictly greater than the previous
+    if (arr[n - 1] > arr[n - 2]) {
         return n - 1;
     }
 
-    // Agar koi peak nahi mila
     return -1;
 }
 
