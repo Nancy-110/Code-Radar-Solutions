@@ -4,10 +4,9 @@ void Sum(int arr[], int n, int T) {
     for (int i = 0; i < n; i++) {
         for (int j = i + 1; j < n; j++) { 
             if (arr[i] + arr[j] == T) {
-                printf("%d %d\n", arr[i], arr[j]); 
-                break;
+                printf("%d %d\n", arr[i], arr[j]);
+                break; // This prevents duplicate pairs
             }
-           
         }
     }
 }
