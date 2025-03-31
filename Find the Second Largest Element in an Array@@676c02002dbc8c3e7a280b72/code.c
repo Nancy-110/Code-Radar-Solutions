@@ -21,7 +21,7 @@ int main(){
             smax=arr[i];
         }
     }
-    if(smax==arr[0]){
+    if(n<2){
         printf("-1\n");
     }else{
     printf("%d",smax);
