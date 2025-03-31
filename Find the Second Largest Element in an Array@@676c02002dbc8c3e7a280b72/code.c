@@ -1,5 +1,5 @@
 #include <stdio.h>
-void find(int arr[], int n);
+void find(int arr[], int n){
 if(n<2){
     printf("-1\n");
     return;
@@ -13,13 +13,14 @@ for(int i =1;i<n;i++){
     }else if(arr[i]>smax && arr[i]!=max){
         smax=arr[i];
     } 
-    
+}
 
 if(smax==-1){
     printf("-1\n");
 }else{
     printf("%d",smax);
 }
+
 }
 
 int main(){
