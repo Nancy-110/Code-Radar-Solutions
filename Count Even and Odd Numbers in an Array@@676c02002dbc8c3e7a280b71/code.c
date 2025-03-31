@@ -8,11 +8,12 @@ for(int i = 0; i < n;i++){
         even++;
         printf("%d ",even);
     }
-}for(int j = i;j<n;j++){
+    for(int j = i;j<n;j++){
     if(j % 2!==0){
         odd++;
         printf("%d",odd);
     }
+}
 }
 }
 
