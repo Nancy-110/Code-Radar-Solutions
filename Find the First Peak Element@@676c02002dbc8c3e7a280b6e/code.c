@@ -45,7 +45,11 @@ int main() {
     }
 
     // First peak element ka index dhundhna
-   
+    int peakIndex = findFirstPeak(arr, n);
+
+    if (peakIndex != -1) {
+        printf("%d\n", arr[peakIndex]);
+    } 
 
     return 0;
 }
