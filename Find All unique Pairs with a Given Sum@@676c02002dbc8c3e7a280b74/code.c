@@ -10,7 +10,6 @@ int main(){
     }
     scanf("%d",&T);
     Sum(arr,n,T);
-    printf("%d %d",i,j);
 
     return 0;
 }
