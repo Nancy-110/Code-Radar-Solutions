@@ -9,7 +9,7 @@ for(int i = 0; i < n;i++){
         printf("%d ",even);
     }
     for(int j = i;j<n;j++){
-    if(j % 2!==0){
+    if(j % 2!=0){
         odd++;
         printf("%d",odd);
     }
