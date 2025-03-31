@@ -33,6 +33,4 @@ void Sum(int arr[],int n,int T){
     }
                 printf("%d %d\n",arr[i],arr[j]);
             }
-        }
-    }
-}
+    
