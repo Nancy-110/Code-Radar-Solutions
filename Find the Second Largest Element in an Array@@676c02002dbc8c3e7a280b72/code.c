@@ -16,11 +16,11 @@ int main(){
             max=arr[i];
         }
     }
-    for(int i =0;i<n;i++)[
+    for(int i =0;i<n;i++){
         if(arr[i]!=max && smax<arr[i]){
             printf("%d",smax);
         }
-    ]
+    }
     
     return 0;
 }
