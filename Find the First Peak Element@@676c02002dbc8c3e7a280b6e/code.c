@@ -19,9 +19,10 @@ int findFirstPeak(int arr[], int n) {
     // Last element must be strictly greater than the previous
     if (arr[n - 1] > arr[n - 2]) {
         return n - 1;
+    }else{
+ return -1;
     }
-
-    return -1;
+   
 }
 
 int main() {
