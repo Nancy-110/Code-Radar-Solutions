@@ -1,20 +1,10 @@
+#include <stdio.h>
+
 // Function to find the first peak element
 int findFirstPeak(int arr[], int n) {
     // Agar array mein ek hi element hai
     if (n == 1) {
         return 0;
-    }
-
-    // Check if all elements in the array are the same
-    int allSame = 1;
-    for (int i = 1; i < n; i++) {
-        if (arr[i] != arr[0]) {
-            allSame = 0;
-            break;
-        }
-    }
-    if (allSame) {
-        return -1;
     }
 
     // Pehla element ko check karo (sirf right neighbor ko compare karo)
@@ -36,4 +26,32 @@ int findFirstPeak(int arr[], int n) {
 
     // Agar koi peak nahi mila
     return -1;
+}
+
+int main() {
+    int n;
+
+    // User se array size input lena
+
+    scanf("%d", &n);
+
+    if (n <= 0) {
+        return 1;
+    }
+
+    int arr[n];
+
+    // User se array elements input lena
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &arr[i]);
+    }
+
+    // First peak element ka index dhundhna
+    int peakIndex = findFirstPeak(arr, n);
+
+    if (peakIndex != -1) {
+        printf("%d\n", arr[peakIndex]);
+    } 
+
+    return 0;
 }
