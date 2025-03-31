@@ -5,9 +5,6 @@ void Sum(int arr[],int n,int T){
             if(i+j==T){
                 printf("%d %d",arr[i],arr[j]);
             }
-            if(i==j){
-                return i,j;
-            }
         }
     }
 }
