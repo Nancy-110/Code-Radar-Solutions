@@ -25,6 +25,6 @@ int arr[n];
 for(int i =0;i<n;i++){
     scanf("%d",&arr[i]);
 }
-count(arr,n);
+Count(arr,n);
     return 0;
 }
