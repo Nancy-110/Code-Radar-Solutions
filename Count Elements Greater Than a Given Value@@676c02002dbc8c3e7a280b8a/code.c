@@ -4,7 +4,7 @@ void greater(int arr[],int n,int k){
     int count =0;
     for(int i =0;i<n;i++){
         if(arr[k]<arr[i]){
-            count++
+            count++;
             printf("%d",count);
         }
     }
