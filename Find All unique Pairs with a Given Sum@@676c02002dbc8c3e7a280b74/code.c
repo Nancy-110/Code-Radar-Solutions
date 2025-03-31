@@ -20,8 +20,8 @@ void Sum(int arr[],int n,int T){
             if(arr[i]+arr[j] == T){
                 bool alreadyPrinted = false;
                 for(int k = 0; k<i;k++){
-                    if(arr[k]==arr[i] &&arr[k+1]==VALUE){
-                        
+                    if(arr[k]==arr[i] &&arr[k+1]==T){
+
                     }
                 }
                 printf("%d %d\n",arr[i],arr[j]);
