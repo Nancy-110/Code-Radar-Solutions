@@ -15,11 +15,10 @@ int main(){
 }
 void Sum(int arr[],int n,int T){
     for(int i =0; i < n; i++){
-        for(int j = 1; j < n; j++){
-            if(i+j == T){
-                printf("%d %d\n",i,j);
+        for(int j = i+1; j < n; j++){
+            if(arr[i]+arr[j] == T){
+                printf("%d %d\n",arr[i],arr[j]);
             }
         }
     }
-    printf("\n");
 }
