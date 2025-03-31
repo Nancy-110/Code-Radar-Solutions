@@ -22,7 +22,7 @@ int main(){
         }
     }
     if(smax==arr[0]){
-        printf("%-1\n");
+        printf("-1\n");
     }else{
     printf("%d",smax);
     }
