@@ -1,22 +1,10 @@
 #include <stdio.h>
-
 // Function to find the first peak element
 int findFirstPeak(int arr[], int n) {
     // Agar array mein ek hi element hai
     if (n == 1) {
         return 0;
     }
-    int allSame = 1;
-    for(int i=1;i<n;i++){
-        if(arr[i] !=arr[0]){
-            allSame =0;
-            break;
-        }
-    }
-    if (allSame){
-        return -1;
-    }
-
     // Pehla element ko check karo (sirf right neighbor ko compare karo)
     if (arr[0] >= arr[1]) {
         return 0;
@@ -57,11 +45,7 @@ int main() {
     }
 
     // First peak element ka index dhundhna
-    int peakIndex = findFirstPeak(arr, n);
-
-    if (peakIndex != -1) {
-        printf("%d\n", arr[peakIndex]);
-    } 
+   
 
     return 0;
 }
