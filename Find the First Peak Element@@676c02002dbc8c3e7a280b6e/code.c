@@ -6,6 +6,16 @@ int findFirstPeak(int arr[], int n) {
     if (n == 1) {
         return 0;
     }
+    int allSame = 1;
+    for(int i=1;i<n;i++){
+        if(arr[] !=arr[0]){
+            allSame =0;
+            break;
+        }
+    }
+    if (allSame){
+        return -1;
+    }
 
     // Pehla element ko check karo (sirf right neighbor ko compare karo)
     if (arr[0] >= arr[1]) {
