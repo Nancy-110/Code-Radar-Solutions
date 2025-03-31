@@ -18,5 +18,5 @@ int main(){
     }else{
         printf("Not sorted");
     }
-    rturn 0;
+    return 0;
 }
