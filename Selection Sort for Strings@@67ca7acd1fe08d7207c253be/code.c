@@ -2,8 +2,8 @@
 #include <string.h>
 
 // Function to swap two elements
-void swap(char *a[100], char *b[100]) {
-    char[temp] = *a;
+void swap(char *a, char *b) {
+    char temp = *a;
     *a = *b;
     *b = temp;
 }
@@ -28,4 +28,20 @@ void printArray(char arr[], int n) {
         printf("%c ", arr[i]);
     }
     printf("\n");
+}
+
+// Main function
+int main() {
+    char arr[] = {'d', 'a', 'c', 'b', 'e'};
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    printf("Original array:\n");
+    printArray(arr, n);
+
+    selectionSort(arr, n);
+
+    printf("Sorted array:\n");
+    printArray(arr, n);
+
+    return 0;
 }
