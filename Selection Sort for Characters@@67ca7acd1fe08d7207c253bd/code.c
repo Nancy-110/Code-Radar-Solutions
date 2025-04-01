@@ -10,14 +10,14 @@ void swap(char *a, char *b) {
 // Function to perform Selection Sort
 void selectionSort(char arr[], int n) {
     for (int i = 0; i < n - 1; i++) {
-        int minIndex = i; // Assume the first element is the smallest
+        int small = i; // Assume the first element is the smallest
         for (int j = i + 1; j < n; j++) {
-            if (arr[j] < arr[minIndex]) {
-                minIndex = j; // Update the index of the smallest element
+            if (arr[j] < arr[small]) {
+                small = j; // Update the index of the smallest element
             }
         }
         // Swap the smallest element with the first element of the unsorted part
-        swap(&arr[i], &arr[minIndex]);
+        swap(&arr[i], &arr[small]);
     }
 }
 
