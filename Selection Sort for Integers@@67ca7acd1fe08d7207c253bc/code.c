@@ -1,5 +1,5 @@
 #include <stdio.h>
-void Swap(int arr[],n){
+void Swap(int arr[],int n){
     for(int i =0;i<n;i++){
        int small= i;
        for(int j=i+1;j<n;j++){
