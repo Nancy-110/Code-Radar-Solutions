@@ -28,21 +28,3 @@ void printArray(char arr[][100], int size) {
     }
 }
 
-int main() {
-    int n;
-    printf("Enter the number of strings: ");
-    scanf("%d", &n);
-    char arr[n][100];
-
-    printf("Enter the strings:\n");
-    for (int i = 0; i < n; i++) {
-        scanf("%s", arr[i]);
-    }
-
-    bubbleSort(arr, n); // Sort the strings
-
-    printf("Sorted strings:\n");
-    printArray(arr, n); // Print sorted strings
-
-    return 0;
-}
