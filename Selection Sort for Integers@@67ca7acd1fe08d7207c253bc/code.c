@@ -9,7 +9,7 @@ void selectionSort(int arr[],int n){
         }
         int temp=arr[small];
         arr[small]=arr[i];
-        arr[i]=int temp;
+        arr[i]= temp;
     }
 }
 void printArray(int arr[],int n){
