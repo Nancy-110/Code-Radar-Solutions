@@ -8,7 +8,7 @@ void selectionSort(int arr[],int n){
             }
         }
         int temp=arr[small];
-        arr small[]=arr[i];
+        arr[small]=arr[i];
         arr[i]=int temp;
     }
 }
